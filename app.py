@@ -1,1 +1,1 @@
-print("Welcome to my Python program!")
+spent = input("How much did you spend this week on groceries?\n")
