@@ -1,7 +1,13 @@
 spent       = input("How much did you spend this week on groceries?\n")
-spent       = float(spent)
-earned      = input("How much did you earn this week from working?\n")
-earned      = float(earned)
+
+try:
+        spent  = float(spent)
+        earned = input("How much did you earn this week from working?\n")
+        earned = float(earned)
+except ValueError:
+        print("Please enter a valid dollar cent amount")
+        exit()
+
 amount_left = earned - spent
 if amount_left < 0:
         print (f"You have spent ${-amount_left:.2f} more than you have earned this week.")
